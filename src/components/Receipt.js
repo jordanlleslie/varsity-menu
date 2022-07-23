@@ -6,7 +6,7 @@ const Receipt = props => {
   return (
     <>
       <button className="show-receipt" onClick={toggleShowing}>
-        Show receipt
+        {showing ? 'Hide' : 'Show'} receipt
       </button>
       <section className={`receipt ${showing ? 'showing' : ''}`}>
         <h2>Your order</h2>
